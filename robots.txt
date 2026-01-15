@@ -1,0 +1,21 @@
+User-agent: *
+Allow: /
+Sitemap: https://itb-landing-page.pages.dev/sitemap.xml
+
+# --- SEARCH ENGINES (Allow) ---
+User-agent: Googlebot
+Allow: /
+User-agent: Bingbot
+Allow: /
+
+# --- AI AGENTS (Allow for Brand Visibility) ---
+User-agent: GPTBot          # OpenAI Training
+Allow: /
+User-agent: OAI-SearchBot   # SearchGPT
+Allow: /
+User-agent: Applebot-Extended # Apple Intelligence
+Allow: /
+User-agent: PerplexityBot   # Perplexity AI
+Allow: /
+User-agent: ClaudeBot       # Anthropic
+Allow: /
