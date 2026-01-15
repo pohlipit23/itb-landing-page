@@ -14,6 +14,7 @@
         href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
         rel="stylesheet">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet" />
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 
     <style>
         :root {
@@ -139,7 +140,7 @@
             min-height: 100vh;
             display: flex;
             align-items: center;
-            padding: 8rem 2rem 4rem;
+            padding: 4rem 2rem 2rem;
             position: relative;
             overflow: hidden;
         }
@@ -160,7 +161,7 @@
             font-size: clamp(3rem, 5.5vw, 4.2rem);
             font-weight: 800;
             line-height: 1.15;
-            margin-bottom: 1.5rem;
+            margin-bottom: 1rem;
             letter-spacing: -0.02em;
             color: var(--text-main);
         }
@@ -329,10 +330,10 @@
 
         /* Stats in Hero */
         .hero-stats {
-            margin-top: 2rem;
+            margin-top: 1.5rem;
             display: flex;
             gap: 3rem;
-            padding-top: 1.5rem;
+            padding-top: 1rem;
             border-top: 1px solid rgba(0, 0, 0, 0.08);
         }
 
@@ -354,7 +355,7 @@
         /* Trust Section */
         .trust-section {
             text-align: center;
-            padding: 2rem 0 4rem;
+            padding: 1rem 0 2rem;
         }
 
         .trust-logos {
@@ -362,7 +363,7 @@
             justify-content: center;
             gap: 4rem;
             align-items: center;
-            margin-top: 1.5rem;
+            margin-top: 1rem;
             flex-wrap: wrap;
         }
 
@@ -383,14 +384,14 @@
 
         /* Features - Reduced Spacing */
         .features {
-            padding: 4rem 2rem;
+            padding: 2rem 2rem;
             position: relative;
         }
 
         .section-header {
             text-align: center;
             max-width: 800px;
-            margin: 0 auto 3rem;
+            margin: 0 auto 1.5rem;
             /* Reduced from 5rem */
         }
 
@@ -445,7 +446,7 @@
 
         /* FAQ Section */
         .faq {
-            padding: 6rem 2rem;
+            padding: 3rem 2rem;
             background: linear-gradient(to bottom, transparent, rgba(32, 60, 148, 0.03));
         }
 
@@ -506,7 +507,7 @@
 
         /* Registration Form */
         .registration {
-            padding: 8rem 2rem;
+            padding: 4rem 2rem;
             position: relative;
         }
 
@@ -523,10 +524,10 @@
         .reg-content {
             background: white;
             border-radius: 26px;
-            padding: 4rem;
+            padding: 2.5rem;
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 5rem;
+            gap: 3rem;
         }
 
         .reg-info h2 {
@@ -538,7 +539,7 @@
 
         .reg-steps {
             list-style: none;
-            margin-top: 3rem;
+            margin-top: 2rem;
         }
 
         .reg-steps li {
@@ -625,7 +626,7 @@
 
         /* Footer */
         .footer {
-            padding: 4rem 2rem;
+            padding: 2rem 2rem;
             text-align: center;
             color: var(--text-light);
             font-size: 0.9rem;
@@ -755,7 +756,7 @@
             <span class="section-tag">What's Included</span>
             <h2 class="section-title">Everything You Need To Scale</h2>
             <p style="color: var(--text-secondary); font-size: 1.1rem;">A comprehensive suite of tools designed to
-                compete with the giants.</p>
+                compete with OTAs.</p>
         </div>
 
         <div class="feature-grid">
@@ -766,7 +767,7 @@
                 <h3
                     style="font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 700; font-family: var(--font-display);">
                     Branded Website</h3>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">Your own fully functional travel website,
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Your own complete E-commerce site,
                     mobile-optimized and ready for conversions immediately.</p>
             </div>
 
@@ -778,7 +779,7 @@
                     style="font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 700; font-family: var(--font-display);">
                     Booking Engine</h3>
                 <p style="color: var(--text-secondary); font-size: 0.95rem;">Powerful search for Flights, Hotels, and
-                    Activities with real-time global inventory.</p>
+                    Activities with massive global inventory.</p>
             </div>
 
             <!-- New Content Card -->
@@ -789,7 +790,7 @@
                 <h3
                     style="font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 700; font-family: var(--font-display);">
                     Unrivalled Content</h3>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">Direct connect NDC content, plus 500+ Low
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Direct connect GDS content, plus 500+ Low
                     Cost Carriers and 2M+ hotels worldwide.</p>
             </div>
 
@@ -823,8 +824,8 @@
                 <h3
                     style="font-size: 1.3rem; margin-bottom: 0.5rem; font-weight: 700; font-family: var(--font-display);">
                     Expert Support</h3>
-                <p style="color: var(--text-secondary); font-size: 0.95rem;">Full onboarding and 90 days of dedicated
-                    technical support to ensure your success.</p>
+                <p style="color: var(--text-secondary); font-size: 0.95rem;">Full onboarding and expert support to
+                    ensure your success.</p>
             </div>
         </div>
     </section>
@@ -859,55 +860,16 @@
                             <div class="step-num">3</div>
                             <div>
                                 <strong>Go Live</strong>
-                                <p style="font-size: 0.9rem; color: var(--text-secondary);">Walk away with a fully
-                                    active business.</p>
+                                <p style="font-size: 0.9rem; color: var(--text-secondary);">Walk away with your complete
+                                    e-commerce site.</p>
                             </div>
                         </li>
                     </ul>
                 </div>
 
                 <div class="reg-form">
-                    <form action="#" class="form-fields">
-                        <div class="form-group full-width">
-                            <label>Full Name</label>
-                            <input type="text" class="form-input" placeholder="e.g. Sarah Connor">
-                        </div>
-                        <div class="form-group">
-                            <label>Agency Name</label>
-                            <input type="text" class="form-input" placeholder="Sky Travels">
-                        </div>
-                        <div class="form-group">
-                            <label>Email</label>
-                            <input type="email" class="form-input" placeholder="sarah@skytravels.com">
-                        </div>
-                        <div class="form-group">
-                            <label>Country</label>
-                            <select class="form-input">
-                                <option>Germany</option>
-                                <option>United Kingdom</option>
-                                <option>France</option>
-                                <option>Other</option>
-                            </select>
-                        </div>
-                        <div class="form-group full-width">
-                            <label>Attending ITB Berlin?</label>
-                            <select class="form-input">
-                                <option>Yes, definitely</option>
-                                <option>Planning to</option>
-                                <option>Not sure</option>
-                            </select>
-                        </div>
-
-                        <button type="submit" class="submit-btn full-width">
-                            Reserve My Spot
-                            <span class="material-icons-round">arrow_forward</span>
-                        </button>
-
-                        <div class="full-width"
-                            style="text-align: center; font-size: 0.85rem; color: var(--text-light); margin-top: 1rem;">
-                            No credit card required. 100% Free for 12 months.
-                        </div>
-                    </form>
+                    <div id="itb-registration-form"></div>
+                    <script src="itb-form-embed.js"></script>
                 </div>
             </div>
         </div>
